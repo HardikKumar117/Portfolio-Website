@@ -1,0 +1,201 @@
+:root{
+    --main:#000;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+     font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+body{
+    background-color: rgb(61, 61, 61);
+}
+
+#nav{
+display:flex;
+justify-content: space-between;
+align-items: center;
+background-color: #000;
+color: #fff;
+padding:0px 50px;
+margin-bottom:10px;
+}
+.left{
+     font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:200;
+  font-style: normal;
+}
+.right{
+     font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:200;
+  font-style: normal;
+}
+#links{
+    display:flex;
+    list-style: none;
+    gap:15px;
+    text-decoration: none;
+}
+#links li a{
+    text-decoration: none;
+    color:inherit;
+}
+.main{
+    height: 80vh;
+    background-color:grey;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:100%;
+    margin:10px;
+    margin-bottom:20px;
+
+}
+.detail{
+font-family: "Montserrat", sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+flex-wrap: wrap;
+background-color:black;
+height:inherit;
+color:white;
+gap:10px;
+padding:20px;
+
+}
+.image{
+    background-color: azure;
+    height: inherit;
+
+}
+.Download {
+    border:black solid 2px;
+    padding:10px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    font-family: inherit;
+   }
+   .Download:hover{
+    background-color: rgb(150, 235, 23);
+   }
+  .Download a{
+    text-decoration: None;
+    color:black;
+    padding:10px;
+
+
+   }
+   .projects{
+    min-height: 100vh;
+    
+   }
+   .project-card-container{
+    height: 80vh;
+    background-color:beige;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    margin:10px;
+    gap:20px;
+    padding:20px;
+    margin-bottom:20px;
+
+       }
+   .projectcards{
+    background-color: rgb(225, 225, 151);
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius:10px;
+    gap:20px;
+   }
+   .project-tags{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    gap:10px;
+    align-items: center;
+    margin-top:30px;
+
+}
+.tags{
+    border: black solid 2px;
+    border-radius: 5px;
+    padding:5px;
+    background-color: #e8ecaa;
+}
+.tags:hover{
+    background-color: rgb(226, 226, 83);
+}
+.contact{
+    margin:10px;
+    height:120vh;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:50px;
+    background-color: grey;
+}
+.form-container{
+    display: flex;
+    justify-content:space-between;
+    height:100vh;
+   width:500px;
+    flex-direction: column;
+    gap:25px;
+    padding:20px;
+    border: solid black 2px;
+    border-radius:10px;
+    background-color: black;
+}
+.form-group{
+   display:flex;
+   justify-content: center;
+   flex-direction: column;
+   gap:20px;
+   color:white;
+  
+}
+#msg{
+    margin-bottom: 30px;
+    border:solid 2px black;
+    border-radius:5px;
+}
+.submit{
+    width: 100px;
+    height:40px;
+    padding:5px;
+    border-radius: 5px;
+}
+input{
+    border-radius: 5px;
+    border:black solid 2px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ @media (max-width:866px){
+    .project-card-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100vh;
+    }
+
+
+
+    
+} 
