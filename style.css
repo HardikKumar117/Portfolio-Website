@@ -45,7 +45,7 @@ margin-bottom:10px;
     text-decoration: none;
     color:inherit;
 }
-.main{
+#main{
     height: 80vh;
     background-color:grey;
     display:grid;
@@ -54,7 +54,7 @@ margin-bottom:10px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows:100%;
     margin:10px;
-    margin-bottom:20px;
+    margin-bottom:50px;
 
 }
 .detail{
@@ -93,8 +93,9 @@ padding:20px;
 
 
    }
-   .projects{
+   #projects{
     min-height: 100vh;
+    margin-bottom:50px;
     
    }
    .project-card-container{
@@ -137,7 +138,7 @@ padding:20px;
 .tags:hover{
     background-color: rgb(226, 226, 83);
 }
-.contact{
+#contact{
     margin:10px;
     height:120vh;
     background-color: white;
@@ -147,6 +148,7 @@ padding:20px;
     flex-direction: column;
     gap:50px;
     background-color: grey;
+    margin-bottom:50px;
 }
 .form-container{
     display: flex;
@@ -159,6 +161,7 @@ padding:20px;
     border: solid black 2px;
     border-radius:10px;
     background-color: black;
+    
 }
 .form-group{
    display:flex;
@@ -188,6 +191,40 @@ input{
     justify-content: center;
     align-items: center;
 }
+#Skills{
+    height:100vh;
+    background-color:rgb(204, 192, 192);
+    margin:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:200px;
+}
+.skill-container{
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    border-radius:10px;
+    color:white;
+    margin:50px;
+    padding:20px;
+    width:40vw;
+
+}
+.My-Skills{
+    height: max-content;
+    font-size: 100px;
+
+}
+.skills{
+    display: flex;
+    justify-content:space-around;
+    width: 35vw;
+    font-size: 30px;}
+
  @media (max-width:866px){
     .project-card-container{
         grid-template-columns: 1fr;
