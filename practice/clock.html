@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<style>
+    .time{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:100px;
+        gap:15px;
+    }
+
+</style>
+<body>
+    <div class="time">
+        <div class="hours">00</div>
+        <div class="minutes">00</div>
+        <div class="seconds">00</div>
+        <button onclick="updateSeconds()">start</button>
+    </div>
+    
+</body>
+<script>
+   
+        let hours=document.querySelector(".hours").textContent;
+        let minutes=document.querySelector(".minutes").textContent;
+        let seconds=document.querySelector(".seconds").textContent;
+        function updateSeconds(){
+            while(true){
+            setTimeout(()=>{
+                seconds++;
+                if(seconds==60){
+                    seconds=0;
+                    updateMinutes();
+                }
+                document.querySelector(".seconds").textContent=seconds;
+
+            },1000)
+        }
+    }
+     function updateMinutes(){
+        minutes++;
+        if(minutes==60){
+            minutes=0;
+            updateHours();
+        }
+        document.querySelector(".minutes").textContent=minutes;
+     }
+     function updateHours(){
+        hours++;
+        if(hours==24){
+            hours=0;
+            seconds=0;
+            minutes=0;
+            updateSeconds();
+        }
+        document.querySelector(".hours").textContent=hours;
+     }
+    
+    </script>
+</html>

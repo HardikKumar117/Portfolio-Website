@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<style>
+    body{
+        color:white;
+        background-color: black;
+        margin :0;
+        padding:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+       width:100vw;
+       height: 20vh;
+       margin:20px;
+       padding:50px;
+
+     
+
+
+    }
+    #plus{
+        border:white 2px solid;
+         background-color: gray;
+         border-radius: 50%;
+         padding:5px;
+         height:100px;
+         width: 100px;
+    }
+    #minus{
+        border:white 2px solid;
+         background-color: gray;
+         border-radius: 50%;
+         padding:10px;
+          padding:5px;
+         height:100px;
+         width: 100px;
+    }
+    #Reset{
+        margin-top:100px;
+        border:white 2px solid;
+         background-color: gray;
+         border-radius: 50%;
+         padding:10px;
+          padding:5px;
+         height:100px;
+         width: 100px;
+    }
+     #counter{
+        font-size:  300px;
+        margin:50px;
+    }
+    
+   
+
+</style>
+<body>
+    
+    
+   
+    <div class="buttons">
+         
+         <button onclick="plus()" id="plus">+</button>
+         <h1 id="counter">0</h1>
+         <button onclick="minus()" id="minus">-</button>
+    </div>
+        
+    <button onclick="reset()" id="Reset">Reset</button>
+    
+   
+    
+    
+
+    <script>
+        
+        function updateDisplay(){
+        document.getElementById("counter").innerText = `  ${count}`
+        }
+        let count = 0
+
+        function plus(){
+            count++
+            console.log(count)
+            updateDisplay()
+        }
+
+        function reset(){
+            count = 0
+              console.log(count)
+              updateDisplay()
+        }
+
+        function minus(){
+            count--
+              console.log(count)
+              updateDisplay()
+            if(count<0){
+              reset()
+            }
+        }
+    </script>
+</body>
+</html>
